@@ -58,7 +58,6 @@ body {
   width: 100%;
   height: 4rem;
   display: flex;
-  border: 2px solid black;
 }
 .expense-list-header span {
   display: flex;
@@ -66,23 +65,15 @@ body {
   align-items: center;
 }
 .expense-number-header {
-  border: 2px solid black;
-
   flex-basis: 5%;
 }
 .expense-title-header {
-  border: 2px solid black;
-
   flex-basis: 40%;
 }
 .expense-amount-header,
 .expense-date-header {
-  border: 2px solid black;
-
   flex-basis: 20%;
 }
 .expense-delete-header {
-  border: 2px solid black;
-
   flex-basis: 15%;
 }
