@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="app-main-container">
+      <section class="header-section-container">
+        <header>
+          <h1>Simple Expense Tracker <i>💶</i></h1>
+        </header>
+      </section>
+
+      <section class="expenses-section-container">
+        <div class="add-expenses-container">
+          <form class="add-expenses-form">
+            <label for="expense-title">Expense title:</label>
+            <input type="text" name="expense-title" />
+            <span class="title-error">Error</span>
+
+            <label for="expense-amount">Expense Amount:</label>
+            <input type="text" name="expense-amount" />
+            <span class="amount-error">Error</span>
+
+            <label for="expense-date">Expense date:</label>
+            <input type="date" name="expense-date" />
+            <span class="date-error">Error</span>
+
+            <button type="submit" class="submit-button">Submit</button>
+          </form>
+        </div>
+
+        <div class="display-expenses-container">
+          <header class="expense-list-header">
+            <span class="expense-number-header">n</span>
+            <span class="expense-title-header">Expense title</span>
+            <span class="expense-amount-header">Expense amount</span>
+            <span class="expense-date-header">Expense date</span>
+            <span class="expense-delete-header">delete</span>
+          </header>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
