@@ -20,18 +20,26 @@
         <div class="add-expenses-container">
           <form class="add-expenses-form">
             <label for="expense-title">Expense title:</label>
-            <input type="text" name="expense-title" />
+            <input
+              type="text"
+              name="expense-title"
+              class="expense-title-input"
+            />
             <span class="title-error">Error</span>
 
             <label for="expense-amount">Expense Amount:</label>
-            <input type="text" name="expense-amount" />
+            <input
+              type="text"
+              name="expense-amount"
+              class="expense-amount-input"
+            />
             <span class="amount-error">Error</span>
 
             <label for="expense-date">Expense date:</label>
-            <input type="date" name="expense-date" />
+            <input type="date" name="expense-date" class="expense-date-input" />
             <span class="date-error">Error</span>
 
-            <button type="submit" class="submit-button">Submit</button>
+            <button class="submit-button">Submit</button>
           </form>
         </div>
 
@@ -46,5 +54,6 @@
         </div>
       </section>
     </div>
+    <script src="./js/app.js" type="module"></script>
   </body>
 </html>
