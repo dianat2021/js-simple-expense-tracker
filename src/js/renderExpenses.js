@@ -1,3 +1,5 @@
+import deleteExpense from "./deleteExpense.js";
+
 const displayExpensesContainer = document.querySelector(
   ".display-expenses-container"
 );
@@ -43,6 +45,11 @@ const renderExpenses = (expenseList) => {
     expenseDate.classList.add("expense-date");
     deleteBtnContainer.classList.add("delete-button-container");
     deleteButton.classList.add("delete-button");
+
+    // DELETE EXPENSES
+    deleteButton.addEventListener("click", () => {
+      deleteExpense(expenseList, expense);
+    });
   });
 };
 
