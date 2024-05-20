@@ -1,5 +1,6 @@
 import addExpense from "./addExpense.js";
 import validateForm from "./formValidation.js";
+import renderExpenses from "./renderExpenses.js";
 // SELECTING THE DOM ELEMENTS
 const titleInput = document.querySelector(".expense-title-input");
 const amountInput = document.querySelector(".expense-amount-input");
@@ -25,6 +26,7 @@ addExpenseForm.addEventListener("submit", (e) => {
   );
   if (formIsValid) {
     addExpense(expenseList, titleInput, amountInput, dateInput);
+    renderExpenses(expenseList);
     console.log(expenseList);
     titleInput.value = "";
     amountInput.value = "";
