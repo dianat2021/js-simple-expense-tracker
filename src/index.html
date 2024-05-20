@@ -24,20 +24,23 @@
               type="text"
               name="expense-title"
               class="expense-title-input"
+              maxlength="30"
+              placeholder="Enter expense title (Max 30 characters)"
             />
-            <span class="title-error">Error</span>
+            <span class="title-error"></span>
 
             <label for="expense-amount">Expense Amount:</label>
             <input
               type="text"
               name="expense-amount"
               class="expense-amount-input"
+              placeholder="Enter expense amount in numeric format"
             />
-            <span class="amount-error">Error</span>
+            <span class="amount-error"></span>
 
             <label for="expense-date">Expense date:</label>
             <input type="date" name="expense-date" class="expense-date-input" />
-            <span class="date-error">Error</span>
+            <span class="date-error"></span>
 
             <button class="submit-button">Submit</button>
           </form>
@@ -45,12 +48,13 @@
 
         <div class="display-expenses-container">
           <header class="expense-list-header">
-            <span class="expense-number-header">n</span>
+            <span class="expense-number-header">#</span>
             <span class="expense-title-header">Expense title</span>
             <span class="expense-amount-header">Expense amount</span>
             <span class="expense-date-header">Expense date</span>
-            <span class="expense-delete-header">delete</span>
+            <span class="expense-delete-header"></span>
           </header>
+          <div class="expense-list"></div>
         </div>
       </section>
     </div>
