@@ -1,4 +1,5 @@
 import renderExpenses from "./renderExpenses.js";
+
 const deleteExpense = (expenseList, expense) => {
   const deleteIndex = expenseList.findIndex(
     (element) => element.id === expense.id

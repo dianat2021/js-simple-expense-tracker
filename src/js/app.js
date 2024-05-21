@@ -7,7 +7,7 @@ import storeExpenses from "./storeExpenses.js";
 const titleInput = document.querySelector(".expense-title-input");
 const amountInput = document.querySelector(".expense-amount-input");
 const dateInput = document.querySelector(".expense-date-input");
-const submitButton = document.querySelector(".submit-button");
+
 const addExpenseForm = document.querySelector(".add-expenses-form");
 const titleError = document.querySelector(".title-error");
 const amountError = document.querySelector(".amount-error");
