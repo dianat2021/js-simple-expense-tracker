@@ -17,7 +17,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: deepskyblue;
+  background-color: #87cefa;
 }
 /* ------------------------- */
 .expenses-section-container {
@@ -28,11 +28,11 @@ input {
 /* ------------------------- */
 .add-expenses-container {
   flex-basis: 30%;
-  background-color: lightgreen;
+  background-color: #87cefa;
 }
 .display-expenses-container {
   flex-basis: 70%;
-  background-color: rgb(144, 144, 100);
+  background-color: #0077c0;
 }
 .add-expenses-form {
   display: flex;
@@ -43,6 +43,8 @@ input {
 .add-expenses-form input {
   height: 2.5rem;
   padding: 0 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
 }
 .add-expenses-form label {
   font-weight: bold;
@@ -67,7 +69,7 @@ input {
   display: flex;
   font-size: 1.2rem;
   border-radius: 0.25rem;
-  background-color: cornsilk;
+  background-color: #e0ffff;
 }
 .expense-list-header > span:not(:last-child) {
   border-right: 2px solid black;
@@ -108,7 +110,7 @@ input {
   display: flex;
   border-radius: 0.25rem;
   margin-bottom: 0.5rem;
-  background-color: azure;
+  background-color: #e0ffff;
 }
 .individual-expense-container > span:not(:last-child) {
   border-right: 2px solid black;
@@ -118,6 +120,14 @@ input {
   width: 5rem;
   height: 2rem;
   cursor: pointer;
+  font-size: 1rem;
+  background-color: #0077c0;
+  border: none;
+  color: #ffffff;
+}
+.delete-button:hover,
+.edit-button:hover {
+  opacity: 0.9;
 }
 .delete-edit-button-container {
   display: flex;

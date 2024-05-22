@@ -56,7 +56,7 @@ const renderExpenses = (expenseList) => {
 
     // EDIT EXPENSES
     editButton.addEventListener("click", () => {
-      editExpense(expenseList, expense, editButton);
+      editExpense(expenseList, expense, editButton, individualExpenseContainer);
     });
   });
 };
