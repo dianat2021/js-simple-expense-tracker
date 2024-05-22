@@ -1,4 +1,5 @@
 import addExpense from "./addExpense.js";
+import calculateTotal from "./calculateTotal.js";
 import validateForm from "./formValidation.js";
 import renderExpenses from "./renderExpenses.js";
 import storeExpenses from "./storeExpenses.js";
@@ -12,6 +13,7 @@ const addExpenseForm = document.querySelector(".add-expenses-form");
 const titleError = document.querySelector(".title-error");
 const amountError = document.querySelector(".amount-error");
 const dateError = document.querySelector(".date-error");
+const totalExpenses = document.querySelector(".total-expenses");
 // EXPENSE LIST ARRAY
 const expenseList = JSON.parse(localStorage.getItem("expense-array")) || [];
 
@@ -34,11 +36,13 @@ addExpenseForm.addEventListener("submit", (e) => {
     addExpense(expenseList, titleInput, amountInput, dateInput);
     storeExpenses(expenseList);
     renderExpenses(expenseList);
-    console.log(expenseList);
+    totalExpenses.textContent = calculateTotal(expenseList);
+
     titleInput.value = "";
     amountInput.value = "";
     dateInput.value = "";
-    console.log(expenseList);
   }
   return;
 });
+
+// console.log(calculateTotal([1, 2, 3]));
