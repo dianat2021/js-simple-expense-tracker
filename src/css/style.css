@@ -56,6 +56,16 @@ input {
   height: 2.5rem;
   cursor: pointer;
 }
+.total-expense-container {
+  width: 80%;
+  height: 10rem;
+  border: 2px solid black;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
 /* ----------------------------- */
 .display-expenses-container {
   padding: 1rem;
