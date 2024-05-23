@@ -20,6 +20,7 @@ const expenseList = JSON.parse(localStorage.getItem("expense-array")) || [];
 // RENDERING EXPENSES FROM THE LOCAL STORAGE ON DOMCONTENTLOAD
 document.addEventListener("DOMContentLoaded", () => {
   renderExpenses(expenseList);
+  totalExpenses.textContent = localStorage.getItem("total-expenses");
 });
 // ADDING EVENT LISTENERS
 addExpenseForm.addEventListener("submit", (e) => {
@@ -34,9 +35,10 @@ addExpenseForm.addEventListener("submit", (e) => {
   );
   if (formIsValid) {
     addExpense(expenseList, titleInput, amountInput, dateInput);
-    storeExpenses(expenseList);
+    storeExpenses("expense-array", expenseList);
     renderExpenses(expenseList);
-    totalExpenses.textContent = calculateTotal(expenseList);
+    storeExpenses("total-expenses", calculateTotal(expenseList));
+    totalExpenses.textContent = localStorage.getItem("total-expenses");
 
     titleInput.value = "";
     amountInput.value = "";

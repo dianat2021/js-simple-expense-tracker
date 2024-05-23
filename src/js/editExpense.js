@@ -43,7 +43,7 @@ const editExpense = (
       expenseDate: dateInput.value.trim(),
       isEditing: expense.isEditing,
     });
-    storeExpenses(clonedExpenseList);
+    storeExpenses("expense-array", expenseList);
     renderExpenses(clonedExpenseList);
     // ACTIVATING THE SUBMIT BUTTON
     submitButton.removeAttribute("disabled");
