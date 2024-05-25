@@ -59,12 +59,14 @@ input {
 .total-expense-container {
   width: 80%;
   height: 10rem;
-  border: 2px solid black;
   align-self: center;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  font-size: 2rem;
+  background-color: #e0ffff;
+  border-radius: 0.5rem;
 }
 /* ----------------------------- */
 .display-expenses-container {
@@ -142,4 +144,7 @@ input {
 .delete-edit-button-container {
   display: flex;
   gap: 0.25rem;
+}
+/* MEDIA QUERIES */
+@media screen and (min-width: 1280px) {
 }
