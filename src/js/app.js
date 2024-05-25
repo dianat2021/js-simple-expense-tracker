@@ -35,10 +35,11 @@ addExpenseForm.addEventListener("submit", (e) => {
   );
   if (formIsValid) {
     addExpense(expenseList, titleInput, amountInput, dateInput);
+    const total = calculateTotal(expenseList);
     storeExpenses("expense-array", expenseList);
     renderExpenses(expenseList);
-    storeExpenses("total-expenses", calculateTotal(expenseList));
-    totalExpenses.textContent = localStorage.getItem("total-expenses");
+    storeExpenses("total-expenses", total);
+    totalExpenses.textContent = total;
 
     titleInput.value = "";
     amountInput.value = "";

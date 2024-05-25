@@ -2,6 +2,8 @@ import renderExpenses from "./renderExpenses.js";
 import storeExpenses from "./storeExpenses.js";
 import calculateTotal from "./calculateTotal.js";
 const deleteExpense = (expenseList, expense) => {
+  const totalExpenses = document.querySelector(".total-expenses");
+
   const deleteIndex = expenseList.findIndex(
     (element) => element.id === expense.id
   );
